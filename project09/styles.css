@@ -1,0 +1,43 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+nav {
+    background-color: pink;
+    display: flex;
+    justify-content: flex-end;
+    /* justify-content: center; */
+}
+nav a {
+    /* flex-grow: 1;
+    flex-basis: 100%; */
+    color: aliceblue;
+    padding: 8px;
+    text-decoration: none;
+    background-color: deeppink;
+}
+nav a:hover {
+    background-color: aliceblue;
+    color: deeppink;
+}
+@media (max-width : 1200px) {
+    nav {
+        justify-content: center;
+        gap: 1rem;
+    }
+}
+@media (max-width : 1000px) {
+    nav {
+        justify-content: space-between;
+    }
+}
+@media (max-width : 800px) {
+    nav {
+        flex-direction: column;
+        gap: 0;
+    }
+    nav a {
+        border-bottom: 1px solid lightcyan;
+    }
+}

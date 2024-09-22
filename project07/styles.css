@@ -1,0 +1,33 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.wrapper {
+    background-color: aliceblue;
+    padding: 8px;
+    display: flex;
+    align-items: baseline;
+    width: 100%;
+    justify-content: space-between;
+}
+.container {
+    background-color: gold;
+    padding: 8px;
+    width: 90%;
+    margin: 100px auto;
+    display: flex;
+    flex-direction: row;
+    gap: 19px;
+    justify-content: flex-start;
+    /* align-items: center; ใส่อันนี้ไม่เปลี่ยนเพราะไม่มีความสูง */ 
+    min-height: 300px;
+    align-items: flex-end;
+}
+.item {
+    border: 1px dashed brown;
+    padding: 10px;
+}
+.item04 {
+    font-size: 24px;
+}

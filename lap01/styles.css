@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@100..900&display=swap');
+* {
+    box-sizing: border-box;
+}
+html {
+    font-family: "Noto Sans Thai", sans-serif;
+}
+.card {
+    margin: 100px auto;
+    width: 200px;
+    height: 260px;
+    border: 1px solid lightgrey;
+    border-radius: 10px;
+    position: relative;
+}
+.card h2 {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: -10px;
+    /* text-decoration-line: line-through; */
+    /* text-decoration-line: underline; */
+    /* text-decoration-line: overline; */
+}
+.card img {
+    width: 100%;
+    border-bottom: 1px solid    gray;
+}
+.card .noti, .card .close {
+    position: absolute;
+    font-size: 1.2rem;
+}
+.card .noti {
+    width: 40px;
+    height: 40px;
+    color: white;
+    border: 1px solid red;
+    border-radius: 50%;
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: -8px;
+    right: -10px;
+}
+.card .close {
+    top: 4px;
+    left: 4px;
+    color: gray;
+    text-shadow: 2px 2px 4px gray;
+}

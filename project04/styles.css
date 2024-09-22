@@ -1,0 +1,36 @@
+* {
+    box-sizing: border-box;
+    /* margin: 0; */
+    padding: 0;
+}
+.container {
+    background-color: antiquewhite;
+    width: 10cm;
+}
+.item01 {
+    border: 1px solid;
+    width: 20em;
+    height: 5rem;
+    padding: 5ch ;
+}
+/* .container div {
+    color: red;
+}
+.container + p {
+    color: lime;
+} */
+/* .item01 ~ div {
+    color: blue;
+}
+[class] {
+    text-decoration: underline;
+}
+.item:first-child {
+    color: red;
+}
+.item:first-of-type {
+    color: blue;
+}
+.item:nth-child(3) {
+    color: deeppink;
+} */

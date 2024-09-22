@@ -1,0 +1,53 @@
+* {
+    box-sizing: border-box;
+}
+.card::before {
+    font-family: "Font Awesome 6 Free";
+	content: '\f410';
+}
+.card::after {
+	content: '9';
+}
+.card {
+    margin: 100px auto;
+    width: 200px;
+    height: 260px;
+    border: 1px solid lightgrey;
+    border-radius: 10px;
+    position: relative;
+}
+.card h4 {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: -8px;
+    font-size: 20px;
+}
+.card img {
+    width: 100%;
+    border-bottom: 1px solid    gray;
+}
+.card::before , .card::after{
+    position: absolute;
+    font-size: 1.3rem;
+}
+  
+.card::before {
+    top: -4px;
+    left: 4px;
+    color: gray;
+    text-shadow: 2px 2px 4px gray;
+}
+  
+.card::after{
+    top: -8px;
+    right: -10px;
+    background-color: red;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    color: whitesmoke
+}

@@ -1,0 +1,21 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.container {
+    /* width: 400px; */
+    height: 80vh;
+    background-color: lightpink;
+    margin: 100px auto;
+    background-image:
+    linear-gradient(to bottom, rgba(113, 113, 114, 0.52), #eee7, rgba(0, 0, 0, 0.794)), url(https://picsum.photos/id/186/400/300);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+.container h2, p {
+    color: white;
+    text-align: center;
+    /* margin-top: 20px; */
+}

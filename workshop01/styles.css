@@ -1,0 +1,185 @@
+/* Global */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+ul {
+    list-style: none;
+}
+html {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+}
+body {
+    max-width: 1200px;
+    min-height: 100vh;
+    margin: auto;
+    background-color: lightblue;
+}
+.container {
+    display: flex;
+    margin: 0 auto;
+    width: 80%;
+}
+
+/* Header */
+header .container {
+    justify-content: space-between;
+}
+header {
+    border-bottom: 2px solid coral;
+    color: white;
+    min-height: 100px;
+    display: flex;
+    align-items: flex-end;
+}
+header nav {
+    display: flex;
+    align-items: self-end;
+}
+header ul {
+    display: flex;
+    text-transform: uppercase;
+    gap: 10px;
+}
+header a {
+    color: inherit;
+    text-decoration: none;
+    font-size: 16px;
+}
+header a:hover {
+    color: blueviolet;
+    font-weight: 800px;
+}
+header span {
+    color: deeppink;
+}
+header .current {
+    background-color: deeppink;
+    padding: 0px 10px;
+}
+
+/* Showcase */
+.showcase {
+    min-height: 400px;
+    background-image: url(https://picsum.photos/id/2/1500/500/?blur=4);
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    color: white;
+}
+.showcase .container {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+.showcase h1 {
+    font-size: 50px;
+}
+.showcase p {
+    color: deeppink;
+    font-size: 20px;
+    padding-inline: 10%;
+}
+
+/* Newsletter */
+.newsletter {
+    background-color: skyblue;
+    padding: 15px;
+    color: coral;
+    display: flex;
+}
+.newsletter .container {
+    justify-content: space-between;
+    align-items: center;
+}
+.newsletter input[type=email] {
+    border: 1px solid white;
+    border-radius: 5px;
+    width: 250px;
+    padding: 8px 8px;
+    font-size: 15px;
+}
+.newsletter button {
+    border: none;
+    background-color: coral;
+    color: white;
+    border-radius: 5px;
+    padding: 8px 8px;
+    font-size: 15px;
+    transition: all 0.5s;
+}
+.newsletter button:hover {
+    transform: scale(1.2);
+}
+
+/* Feature Boxes */
+.boxes {
+    margin-top: 20px;
+}
+.boxes .container {
+    justify-content: space-between;
+}
+.boxes .box {
+    padding: 12px;
+    text-align: center;
+}
+.boxes img {
+    height: 120px;
+}
+
+/* Footer */
+footer {
+    height: 60px;
+    background-color: skyblue;
+    padding: 15px;
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+/* footer {
+    height: 60px;
+    background-color: skyblue;
+    padding: 15px;
+    color: white;
+    display: grid; เราสามารถใช้ Grid ในการจัดได้เหมือนกัน 
+    place-items: center;
+    position: absolute; ถ้ามีพื้นที่เหลือข้างล่าง ให้ใช้สูตรนี้
+    bottom: 0;
+} */
+
+/* Responsive */
+@media (max-width : 900px) {
+    .container {
+        width: 100%;
+    }
+    header .container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 10px;
+    }
+    .newsletter .container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .newsletter form {
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        width: 100%;
+        gap: 20px;
+    }
+    .newsletter input[type=email] {
+        width: 100%;
+    }
+    .boxes .container {
+        flex-direction: column;
+    }
+    /* footer {
+        position: relative;
+    } ข้างบนตัวอย่างที่ใส่ position ไว้ให้เอาออกด้วยอันนี้ */
+}

@@ -1,0 +1,47 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+h1 {
+    background-color: aqua;
+    width: 50%;
+    /* margin-left: auto;
+    margin-right: auto; */
+    /* margin: 0 auto; */
+    /* บนล่างคือ 0 ที่เหลือ auto */
+    margin: 10px auto;
+    padding: 8px;
+    border: 5px solid silver;
+    /* outline: 8px solid lime; */
+    box-shadow: 8px -16px 54px -13px rgba(0, 0, 0, 0.62);
+    border-radius: 8px 16px 32px;
+}
+hr {
+    border-width: 5px;
+    border-style: dashed;
+    border-color: blueviolet;
+}
+.avatar {
+    width: 100px;
+    height: 100px;
+    border: 1px solid lime;
+    margin: 10px auto;
+    /* display: flex;
+    justify-content: center;
+    align-content: center; */
+    display: grid;
+    place-items: center;
+    border-radius: 50%;
+    overflow: hidden;
+    /* ใส่เพื่อให้ส่วนเกินรูปถูกตัดออก */
+}
+img {
+    width: 100%;
+}
+p {
+    margin: 10px;
+    border: 1px solid red;
+    /* width: 300px; */
+    width: fit-content;
+}
